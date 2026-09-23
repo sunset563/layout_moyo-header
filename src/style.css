@@ -4,7 +4,10 @@ html {
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  transform: ease;
+}
+
+:root {
+  --blue-color: #00acdc;
 }
 
 body {
@@ -51,7 +54,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav-item {
@@ -63,18 +66,18 @@ body {
 }
 
 [data-qa='hover']:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .is-active::after {
   content: '';
   position: absolute;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--blue-color);
   left: 0;
   bottom: 0;
   right: 0;
